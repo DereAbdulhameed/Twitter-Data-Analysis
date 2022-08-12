@@ -1,29 +1,22 @@
 # Twitter-Data-Analysis
+This project aims to showcase a complete Machine Learning Workflow with the aim of Understanding the current political sitiuations of the world powers including 
+United States, china and Taiwan. This project intends to understand, analyze and gain meaningful insights from the data. In order to complete this task,
+we will use Topic Modelling and Sentiment Analysis whilst followung the data science workflow.
 
-### So here are the bare minimum requirement for completing this task
+# Data Science / Machine Learning Workflow
 
-1. Use this template to create a repository called Twitter-Data-Analysis in your github account. See ["Creating a repository from a template."](https://docs.github.com/en/articles/creating-a-repository-from-a-template) for more information.
-2. [Download](https://drive.google.com/drive/folders/19G8dmehf9vU0u6VTKGV-yWsQOn3IvPsd) and extract the necessary data and put it in the data directory. The data should not not be added to git tracking.
-3. Create a branch called “bugfix” to fix the bugs in the fix_clean_tweets_dataframe.py and fix_extract_dataframe.py 
-4. In branch “bugfix” use the git mv command to rename fix_clean_tweets_dataframe.py to clean_tweets_dataframe.py and fix_extract_dataframe.py  to extract_dataframe.py 
-5. Fix the bugs on clean_tweets_dataframe.py and extract_dataframe.py 
-6. Multiple times, push the code you are working on to git, and once the fix is complete, merge the fix_bug branch to main branch
-7. Create a new branch called “testing” for updating the unit tests in the test/ folder to be applicable to the code you fixed. 
-    a. Build your unit and integration tests to run on small data (< 1 MB) that you copied from what is provided - avoid pushing large data to github
-    b. Think about the key elements (units can be functions, classes, or modules; multiple of them working together to accomplish a task requires integration testing) of the code base you are working on. Write the following
-      - Unit tests: for individual key functions and classes
-      - Integration tests: for the integration of multiple units working together
-8. After completing the unit and integration tests, merge  the “testing” branch with the main branch
-9. In all cases when you merge, make sure you first do Pull Request, review, then accept the merge.
-10. Use github actions in your repository such that when you git push new code (or merge a branch) to the main branch, the unit test in tests/*.py runs automatically. All tests should pass.
+## Data Understanding
+In this project, two JSON files are given. These files contain dataset of tweets that are gotten from a scraping process done on twitter regrading current poliical situation. The datasets are global_twitter_data.json and africa_twitter_data.json. Each file has numerous columns including but not limited to "followers_count", "original_text", "polarity", "hashtags". From the names of these columns, there should be some intuitions in the mind regarding the nature of the dataset.
 
+## Data Preparation/Processing
+As a data scientist, majority of work lies in processing the data needed for proper modelling. There is need to clean and preprocess the raw data in order to make it ready for modelling. Processing includes but not limited to managing missing data, duplicate data, handling noises and outliers, handling different language in the data as well as other characters that are not strings. The preprocessing step also include splitting of the dataset into training, validation and testing.
 
-After Completing this Challenge, you would have explore  
+## Model Building
+A model will be built on the processed data. In this step, we would explore the concept of NO FREE LUNCH THEOREM where we cannot just pick a single model without trying the others, that is, different models will be built and compared. Training dataset will be used to train/fit while validation and test data will be used to evaluate the model.
 
-- Unittesting
-- Modular Coding
-- Software Engineering Best Practices
-- Python Package Structure
-- Bug Fix (Debugging)
+## Evaluation
+Performance evaluation will be done using accuracy, f1-score, precision to determine the best performing model
 
+## Deployment
+After the accuracy of the model has beinmg ascertained, the best performing model will then be deployed and canm be used to make predictions by end users.
 Have Fun and Cheers
