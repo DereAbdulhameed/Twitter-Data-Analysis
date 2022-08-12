@@ -22,7 +22,9 @@ we will use Topic Modelling and Sentiment Analysis whilst followung the data sci
 
 
 ## Folder Structure
-data: contains the dataset
-notebooks: contains the jupytrer notebooks
-test: contains the test files
+. data: contains the dataset
+
+. notebooks: contains the jupytrer notebooks
+
+. test: contains the test files
 
